@@ -1,0 +1,1 @@
+# CrazyCoin-Token
