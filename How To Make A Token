@@ -4,7 +4,7 @@ sh -c "$(curl -sSfL https://release.solana.com/v1.8.5/install)"
 solana-keygen new
 BIP39 Passphrase (empty for none): (Add if you want a password)
 
-Wrote new keypair to /root/.config/solana/id.json
+Wrote new keypair to /HOME/.config/solana/id.json
 =======================================================================
 pubkey: ************************************
 =======================================================================
