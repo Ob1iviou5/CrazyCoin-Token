@@ -1,0 +1,97 @@
+sh -c "$(curl -sSfL https://release.solana.com/v1.8.5/install)"
+
+# CREATE A NEW WALLET
+solana-keygen new
+BIP39 Passphrase (empty for none): (Add if you want a password)
+
+Wrote new keypair to /root/.config/solana/id.json
+=======================================================================
+pubkey: ************************************
+=======================================================================
+Save this seed phrase and your BIP39 passphrase to recover your new keypair:
+12 Words
+=======================================================================
+
+# CHECK BALANCE
+solana balance
+
+# UPDATE
+sudo apt update
+
+# DOWNLOADING RUST
+curl https://sh.rustup.rs -sSf | sh
+
+# UPDATING LIBRARIES / INSTALLING ESSENTIALS
+sudo apt install libudev-dev
+sudo apt install libssl-dev pkg-config -y
+sudo apt install build-essential -y
+
+# CREATE YOUR TOKEN
+cargo install spl-token-cli
+#WAIT TILL IT INSTALLS EVERYTHING
+spl-token create-token
+
+Creating token
+
+Signature: 
+
+# CREATING AN ACCOUNT
+spl-token create-account token address
+Creating account 
+
+Signature: 
+
+# Check sonana balance
+> solana balance
+# MINT TOKENS
+spl-token mint token addresss number of tokens account address
+
+# Check Solana balance
+> solana balance
+# CHECK TOKEN ACCOUNT FOR TOKENS
+> spl-token accounts
+
+Token                                         Balance
+---------------------------------------------------------------
+Account Address                               No of Tokens
+
+// get solana deposit address
+
+# FUND WALLET
+# TRANSFER TOKENS TO A NEW WALLET
+spl-token transfer --fund-recepient --allow empty-recepient your token address token amount recepient deposit wallet address
+
+// Once you do this you need to change the name of the tokena dnadd a picture.
+// Ensure the picture is 200X200 maximum.
+// Create a github account.
+// create repository
+// add the picture into there as a png file
+// click on the file once uploaded and press download and get the raw url link
+
+// go to the solana labs token list 
+// fork the list
+// click on a black part of the page and press . (Web Editor will open)
+// go to assets
+// create new folder
+// drop png file into folder
+// go to src
+// add the below code after the last entry. DO NOT MODIFY ANYTHING ELSE
+
+} 
+  {
+    "chainId": 101,
+    "address": "Token Address",
+    "symbol": "",
+    "name": "",
+    "decimals": 0,
+    "logoURI": "GitHub png raw url link,
+    "tags": [
+      "community-token",
+      "utility-token",
+      "nft"
+    ],
+    "extensions": {
+      "facebook": "https://facebook.com/.......",
+      "instagram": "https://www.instagram.com/......../",
+      "twitter": "https://twitter.com/........"
+  } 
